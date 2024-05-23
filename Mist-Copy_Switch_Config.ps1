@@ -100,7 +100,7 @@ function Push-JunosSwitchConfig {
         'Authorization' = $token
     }
     $API_URI = "https://api.mist.com/api/v1/sites/$SiteID/devices/$SwitchID"
-    $SwitchPayload = Invoke-RestMethod -Uri $API_URI -Method Put -Headers $headers -ContentType "application/json; charset=utf-8" -Body $SwitchConfigJSON
+    $SwitchPayload = Invoke-RestMethod -Uri $API_URI -Method Put -Headers $headers -ContentType "application/json" -Body $SwitchConfigJSON
     Return $SwitchPayload
 }
 
