@@ -1,0 +1,2 @@
+api_key=<APIKey>
+org_id=<Org_Id from mist>
